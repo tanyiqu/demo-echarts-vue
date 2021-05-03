@@ -1,5 +1,5 @@
 <template>
-  <div id="chartPie" class="pie-wrap"></div>
+  <div id="pie" class="pie-wrap"></div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ import * as echarts from 'echarts';
 export default {
   data() {
     return {
-      chartPie: null
+      chart: null
     }
   },
 
@@ -20,9 +20,9 @@ export default {
 
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('chartPie'), 'macarons');
+      this.chart = echarts.init(document.getElementById('pie'));
       
-      this.chartPie.setOption({
+      this.chart.setOption({
         tooltip: {
           trigger: 'item'
         },

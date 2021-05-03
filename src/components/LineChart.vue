@@ -1,5 +1,5 @@
 <template>
-  <div id="chartLine" class="line-wrap"></div>
+  <div id="line" class="line-wrap"></div>
 </template>
 
 <script>
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     drawLineChart() {
-      this.chart = echarts.init(this.$el, 'shine');// 基于准备好的dom，初始化echarts实例
+      this.chart = echarts.init(this.$el);// 基于准备好的dom，初始化echarts实例
 
       let option = {
         title: {

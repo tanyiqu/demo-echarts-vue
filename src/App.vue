@@ -1,18 +1,19 @@
 <template>
   <div id="app">
-    <Pie />
+    <PieChart />
     <LineChart />
   </div>
 </template>
 
 <script>
-import Pie from './components/Pie.vue';
-import LineChart from './components/Line.vue';
+import PieChart from './components/PieChart.vue';
+import LineChart from './components/LineChart.vue';
 
 export default {
   name: 'App',
   components: {
-    Pie, LineChart
+    PieChart,
+    LineChart
   }
 }
 </script>
